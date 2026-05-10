@@ -103,7 +103,7 @@ jobs:
           npm ci || (sleep 10 && npm ci) || (sleep 30 && npm ci)
 
       - name: 'Download Results'
-        uses: 'actions/download-artifact@v4' # ratchet:exclude
+        uses: 'actions/download-artifact@v8' # ratchet:exclude
         with:
           path: 'eval-results'
           pattern: 'eval-results-*'
